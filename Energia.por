@@ -7,6 +7,7 @@ programa
 		real leituraFinal = 0.0
 		real valor = 0.0
 		real realTotal = 0.0
+		real Valorkw = 0.0
 			
 		escreva("Digite o valor inicial: ")
 		leia(leituraInicial)
@@ -18,7 +19,10 @@ programa
 		leia(valor)
 
 		realTotal = consumo (leituraInicial, leituraFinal, valor)
-		escreva("O valor do consumo é de: R$ ", realTotal)
+		escreva("O valor do consumo é de: R$ ", realTotal," reais \n")
+
+		Valorkw = (leituraInicial - leituraFinal)
+		escreva("O consumo de Kw/h foi de: ", Valorkw, "\n")
 	}
 
 	funcao real consumo(real leituraInicial, real leituraFinal, real valor){
@@ -34,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 402; 
+ * @POSICAO-CURSOR = 439; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
